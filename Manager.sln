@@ -22,6 +22,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager.Models", "Manager.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager.Startup", "Manager.Startup\Manager.Startup.csproj", "{2A835A81-4E64-4634-B875-02F4D9796602}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager.Services", "Manager.Services\Manager.Services.csproj", "{B3BD94CC-2BAB-472E-BFCA-B0885F3E2690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager.Persistence", "Manager.Persistence\Manager.Persistence.csproj", "{F271BED6-B97C-4FB5-8F9E-D77AD23E2B85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +56,14 @@ Global
 		{2A835A81-4E64-4634-B875-02F4D9796602}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A835A81-4E64-4634-B875-02F4D9796602}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A835A81-4E64-4634-B875-02F4D9796602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3BD94CC-2BAB-472E-BFCA-B0885F3E2690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3BD94CC-2BAB-472E-BFCA-B0885F3E2690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3BD94CC-2BAB-472E-BFCA-B0885F3E2690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3BD94CC-2BAB-472E-BFCA-B0885F3E2690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F271BED6-B97C-4FB5-8F9E-D77AD23E2B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F271BED6-B97C-4FB5-8F9E-D77AD23E2B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F271BED6-B97C-4FB5-8F9E-D77AD23E2B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F271BED6-B97C-4FB5-8F9E-D77AD23E2B85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
