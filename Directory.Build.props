@@ -4,6 +4,10 @@
     <Nullable>enable</Nullable>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 
+    <DotNetVersion>net10.0</DotNetVersion>
+    <UnoDesktopTargetFramework>$(DotNetVersion)-desktop</UnoDesktopTargetFramework>
+    <UnoBrowserWasmTargetFramework>$(DotNetVersion)-browserwasm</UnoBrowserWasmTargetFramework>
+
     <!--
       Adding NoWarn to remove build warnings
       NU1507: Warning when there are multiple package sources when using CPM with no source mapping
