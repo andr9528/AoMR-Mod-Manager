@@ -1,5 +1,4 @@
 using CommunityToolkit.WinUI.UI.Controls;
-using ModManager.Abstractions.Models;
 using ModManager.Extensions;
 using ModManager.Presentation.Converter;
 

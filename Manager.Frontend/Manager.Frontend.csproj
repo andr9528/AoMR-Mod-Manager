@@ -103,4 +103,8 @@
       <CopyToPublishDirectory>Never</CopyToPublishDirectory>
     </None>
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Presentation\Core\" />
+  </ItemGroup>
 </Project>

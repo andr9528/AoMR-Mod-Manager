@@ -1,7 +1,5 @@
 using System.Diagnostics;
 using System.Text.Json;
-using ModManager.Abstractions.Services;
-using ModManager.Abstractions.Startup;
 using ModManager.Services;
 using ModManager.Strings;
 using Uno.Extensions.Localization;

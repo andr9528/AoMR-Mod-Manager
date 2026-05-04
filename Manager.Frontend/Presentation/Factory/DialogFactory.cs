@@ -1,4 +1,3 @@
-using ModManager.Abstractions.Services;
 using ModManager.Strings;
 
 namespace ModManager.Presentation.Factory;
