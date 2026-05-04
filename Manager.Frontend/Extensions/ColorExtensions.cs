@@ -1,4 +1,4 @@
-namespace ModManager.Extensions;
+namespace Manager.Frontend.Extensions;
 
 public static class ColorExtensions
 {

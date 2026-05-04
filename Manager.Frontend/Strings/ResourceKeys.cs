@@ -1,4 +1,4 @@
-namespace ModManager.Strings;
+namespace Manager.Frontend.Strings;
 
 public static class ResourceKeys
 {

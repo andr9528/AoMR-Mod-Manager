@@ -1,8 +1,7 @@
-using CommunityToolkit.WinUI.UI.Controls;
-using ModManager.Extensions;
-using ModManager.Presentation.Converter;
+using Manager.Abstractions.Entity.Model;
+using Manager.Frontend.Extensions;
 
-namespace ModManager.Presentation.Factory;
+namespace Manager.Frontend.Presentation.Factory;
 
 public static class ListViewFactory
 {

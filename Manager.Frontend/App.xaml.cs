@@ -1,8 +1,6 @@
-using System.Reflection;
-using Uno.Extensions.Configuration;
-using Uno.Resizetizer;
+using Manager.Frontend.Styles;
 
-namespace ModManager;
+namespace Manager.Frontend;
 
 public partial class App : Application
 {
@@ -15,32 +13,32 @@ public partial class App : Application
         InitializeComponent();
     }
 
-    protected Window? MainWindow { get; private set; }
+    private Window? MainWindow { get; set; }
     protected IHost? Host { get; private set; }
-    internal static Startup Startup { get; set; }
+    internal static UnoStartup Startup { get; set; }
 
     protected override void OnLaunched(LaunchActivatedEventArgs args)
     {
-        Startup = new Startup();
+        Startup = new UnoStartup();
 
         // Load WinUI Resources
         Resources.Build(r => r.Merged(new XamlControlsResources()));
 
         // Load Uno.UI.Toolkit and Material Resources
         Resources.Build(r => r.Merged(
-            new MaterialToolkitTheme(new Styles.ColorPaletteOverride(), new Styles.MaterialFontsOverride())));
+            new MaterialToolkitTheme(new ColorPaletteOverride(), new MaterialFontsOverride())));
 
         IApplicationBuilder builder = this.CreateBuilder(args);
 
-        Startup.SetupApplication(builder)
-            .Configure(host => host.ConfigureServices(collection => Startup.SetupServices(collection)));
+        Startup.SetupApplication(builder).Configure(host =>
+            host.ConfigureServices(collection => Startup.SetupServices(collection)));
 
         MainWindow = builder.Window;
 
 #if DEBUG
         MainWindow.UseStudio();
 #endif
-        //MainWindow.SetWindowIcon();
+        MainWindow.SetWindowIcon();
 
         Host = builder.Build();
 
@@ -68,6 +66,7 @@ public partial class App : Application
             rootFrame.Navigate(typeof(MainPage), args.Arguments);
         }
 
+        Startup.FlushStartupLogs();
         // Ensure the current window is active
         mainWindow.Activate();
     }

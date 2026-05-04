@@ -107,4 +107,9 @@
   <ItemGroup>
     <Folder Include="Presentation\Core\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Manager.Services\Manager.Services.csproj" />
+    <ProjectReference Include="..\Manager.Startup\Manager.Startup.csproj" />
+  </ItemGroup>
 </Project>

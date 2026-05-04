@@ -1,4 +1,4 @@
-namespace ModManager.Styles;
+namespace Manager.Frontend.Styles;
 
 public sealed class MaterialFontsOverride : ResourceDictionary
 {

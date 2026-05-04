@@ -1,7 +1,6 @@
-using System.Collections.ObjectModel;
 using CommunityToolkit.WinUI.UI.Controls;
 
-namespace ModManager.Presentation.Factory;
+namespace Manager.Frontend.Presentation.Factory;
 
 public static class DataGridFactory
 {

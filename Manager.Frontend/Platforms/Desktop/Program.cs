@@ -1,3 +1,4 @@
+using Manager.Frontend;
 using Uno.UI.Hosting;
 
 namespace ModManager;

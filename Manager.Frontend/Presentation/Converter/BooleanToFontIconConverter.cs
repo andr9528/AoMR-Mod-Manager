@@ -1,4 +1,4 @@
-namespace ModManager.Presentation.Converter;
+namespace Manager.Frontend.Presentation.Converter;
 
 public class BooleanToFontIconConverter : IValueConverter
 {

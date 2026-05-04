@@ -1,8 +1,7 @@
-using ModManager.Extensions;
-using ModManager.Presentation;
-using ModManager.Presentation.Factory;
+using Manager.Frontend.Extensions;
+using Manager.Frontend.Presentation.Factory;
 
-namespace ModManager;
+namespace Manager.Frontend;
 
 public sealed partial class MainPage : Page
 {

@@ -1,6 +1,6 @@
-using ModManager.Strings;
+using Manager.Frontend.Strings;
 
-namespace ModManager.Presentation.Factory;
+namespace Manager.Frontend.Presentation.Factory;
 
 public static class DialogFactory
 {

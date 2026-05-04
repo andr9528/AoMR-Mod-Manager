@@ -1,4 +1,4 @@
-namespace ModManager.Models;
+namespace Manager.Frontend.Models;
 
 public record AppConfig
 {

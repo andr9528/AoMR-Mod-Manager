@@ -1,6 +1,6 @@
-using ModManager.Extensions;
+using Manager.Frontend.Extensions;
 
-namespace ModManager;
+namespace Manager.Frontend;
 
 public static class Constants
 {
